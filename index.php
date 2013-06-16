@@ -28,14 +28,25 @@
 				// grab admin email and their photo
 				$admin_email = get_option('admin_email');
 				echo get_avatar( $admin_email, 100 ); 
-			?>
-		</div><!--/ author -->
+			?>		</div><!--/ author -->
 		
 		<div id="brand">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> &mdash; <span><?php echo get_bloginfo( 'description' ); ?></span></h1>
 		</div><!-- /brand -->
 	
 		<nav role="navigation" class="site-navigation main-navigation">
+<br />
+<a href="http://www.facebook.com/andrea.margiovanni"><img src=" http://margiovanni.com/wp-content/uploads/2013/06/facebook-32.png" /></a>
+&nbsp;
+<a href="http://twitter.com/kentoo"><img src="http://margiovanni.com/wp-content/uploads/2013/06/twitter-32.png" /></a>
+&nbsp;
+<a href="https://plus.google.com/106399181036753237468/posts" ><img src="http://margiovanni.com/wp-content/uploads/2013/06/googleplus-32.png" /></a>
+&nbsp;
+<a href="http://www.flickr.com/andymargiovanni"><img src="http://margiovanni.com/wp-content/uploads/2013/06/flickr-32.png" /></a>
+&nbsp;
+<a href="http://instagram.com/kentoo"><img src="http://margiovanni.com/wp-content/uploads/2013/06/instagram-32.png" /></a>
+&nbsp;
+<a style="opacity: .85; filter:alpha(opacity=85);" href="skype:andrea.margiovanni?chat"><img src="http://margiovanni.com/wp-content/uploads/2013/06/Skype.png" /></a><br />
 			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 		</nav><!-- .site-navigation .main-navigation -->
 		
@@ -218,14 +229,29 @@
 
 <footer class="site-footer" role="contentinfo">
 	<div class="site-info container">
-		<?php do_action( 'break_credits' ); ?>
+<!--		<?php do_action( 'break_credits' ); ?>
 		<a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress</a>
 		<span class="sep"> and </span>
-		<a href="http://lessmade.com/themes/less" rel="theme">LESS</a> by <a href="http://jarederickson.com" rel="designer">Jared Erickson</a>
+		<a href="http://lessmade.com/themes/less" rel="theme">LESS</a> by <a href="http://jarederickson.com" rel="designer">Jared Erickson</a> -->
 	</div><!-- .site-info -->
 </footer><!-- #colophon .site-footer -->
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36294323-1']);
+  _gaq.push(['_setDomainName', 'margiovanni.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </body>
 </html>

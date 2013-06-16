@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Oxygen:400,700);
+@import url(http://fonts.googleapis.com/css?family=Headland+One);
 /*
 Theme Name: Less
 Theme URI: http://lessmade.com/themes/less
@@ -104,7 +104,16 @@ video {
   vertical-align: baseline;
   font: inherit;
   font-size: 100%;
+font-family: "Headland One", Georgia, serif;
 }
+
+blockquote {
+display:block;
+margin-left:20px;
+padding-left:40px;
+border-left:3px solid #ccc;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -130,6 +139,8 @@ html {
 
   -ms-text-size-adjust: 100%;
   /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smooth: always;
 
 }
 ol,
@@ -348,7 +359,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  font-family: "Arvo", Georgia, serif;
+  font-family: "Headland One", Georgia, serif;
 }
 h1 {
   line-height: 71.03999999999999px;
@@ -379,6 +390,7 @@ hr {
 /* Text elements */
 p {
   margin-bottom: 1.5em;
+  font-family: "Headland One", Georgia, serif;
 }
 ul,
 ol {
@@ -686,6 +698,14 @@ footer {
   line-height: 0;
   height: 0;
 }
+
+code {
+display:block;
+padding:20px;
+background:#efefef;
+border:1px solid #ccc;
+} 
+
 .clearfix {
   display: inline-block;
 }
